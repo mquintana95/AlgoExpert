@@ -1,0 +1,11 @@
+def twoNumberSum(array, targetSum):
+    # Write your code here
+	
+	for i in range(len(array)):
+		num = array[i]
+		for j in range(len(array)):
+			num2 = array[j]
+			if num + num2 == targetSum and i != j:
+				return [num,num2]
+	return []
+				
